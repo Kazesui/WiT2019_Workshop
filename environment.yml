@@ -1,0 +1,6 @@
+name: workshop-environment
+channel:
+  - conda-forge
+dependencies:
+  - numpy
+  - matplotlib
