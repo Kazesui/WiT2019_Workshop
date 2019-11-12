@@ -11,3 +11,7 @@ dependencies:
   - partd
   - bokeh
   - dask
+  - pip
+  - pip:
+    - tensorflow
+    - keras
