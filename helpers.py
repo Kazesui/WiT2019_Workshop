@@ -1,5 +1,7 @@
 import numpy as np
+import matplotlib
 import warnings
+
 
 warnings.simplefilter('ignore', category=FutureWarning)
 
@@ -10,3 +12,7 @@ def load_binary(filename, **kwargs):
     with open(filename, 'rb') as fp:
         data = np.fromfile(fp, dtype=data_type)
     return data
+
+
+def plot_size(width, height):
+    matplotlib.rcParams['figure.figsize'] = width, height
